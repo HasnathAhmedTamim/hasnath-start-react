@@ -2,44 +2,49 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-y">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer className="bg-slate-900  border-y">
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
               <img
-                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                className="mr-3 h-16"
+                src="https://img.freepik.com/free-vector/red-logo-black-background_1195-52.jpg?w=740&t=st=1706175352~exp=1706175952~hmac=0046fcd76a5b243f371f8fea04dfe4fcde11b2b332b9264ee8ee56d52071b886"
+                className="mr-3 h-16 border border-red-900"
                 alt="Logo"
               />
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 ">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-white hover:underline  uppercase">
                 Resources
               </h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className="text-white font-medium">
                 <li className="mb-4">
                   <Link to="/" className="hover:underline">
                     Home
                   </Link>
                 </li>
-                <li>
+                <li className="mb-4">
                   <Link to="/about" className="hover:underline">
                     About
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link to="/contact" className="hover:underline">
+                    Contact
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-white hover:underline  uppercase">
                 Follow us
               </h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className="text-white font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/hiteshchoudhary"
+                    href="https://github.com/HasnathAhmedTamim"
                     className="hover:underline"
                     target="_blank"
                     rel="noreferrer"
@@ -48,17 +53,22 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <Link to="/" className="hover:underline">
-                    Discord
+                  <Link
+                    rel="noreferrer"
+                    target="_blank"
+                    to="https://www.linkedin.com/in/hasnath-ahmed-tamim/"
+                    className="hover:underline"
+                  >
+                    LinkedIn
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-white  hover:underline uppercase">
                 Legal
               </h2>
-              <ul className="text-gray-500 font-medium">
+              <ul className="text-white font-medium">
                 <li className="mb-4">
                   <Link to="#" className="hover:underline">
                     Privacy Policy
@@ -75,15 +85,15 @@ export default function Footer() {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
-            © 2023
+          <span className="text-sm text-white sm:text-center">
+            © 2024
             <a href="https://hiteshchoudhary.com/" className="hover:underline">
-              hiteshchoudhary
+              hasnathahmedtamim
             </a>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-            <Link to="#" className="text-gray-500 hover:text-gray-900">
+            <Link to="#" className="text-white hover:text-gray-900">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -99,7 +109,7 @@ export default function Footer() {
               </svg>
               <span className="sr-only">Facebook page</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            <Link to="#" className="text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -111,7 +121,7 @@ export default function Footer() {
               </svg>
               <span className="sr-only">Discord community</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            <Link to="#" className="text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -127,7 +137,7 @@ export default function Footer() {
               </svg>
               <span className="sr-only">Twitter page</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            <Link to="#" className="text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -143,7 +153,7 @@ export default function Footer() {
               </svg>
               <span className="sr-only">GitHub account</span>
             </Link>
-            <Link to="#" className="text-gray-500">
+            {/* <Link to="#" className="text-white">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -158,7 +168,7 @@ export default function Footer() {
                 />
               </svg>
               <span className="sr-only">Dribbble account</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

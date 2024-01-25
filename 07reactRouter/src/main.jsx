@@ -36,17 +36,14 @@ import UserTamim from "./components/UserTamim/UserTamim.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout></Layout>}>
-      <Route path="" element={<Home></Home>}></Route>
-      <Route path="about" element={<About></About>}></Route>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />}></Route>
+
+      <Route path="contact" element={<Contact />} />
+      <Route path="user/:userId" element={<User />} />
       <Route path="usertamim/:tamimid" element={<UserTamim />} />
-      <Route path="contact" element={<Contact></Contact>}></Route>
-      <Route path="user/:userId" element={<User></User>}></Route>
-      <Route
-        loader={githubInfoLoader}
-        path="github"
-        element={<Github></Github>}
-      ></Route>
+      <Route loader={githubInfoLoader} path="github" element={<Github />} />
     </Route>
   )
 );

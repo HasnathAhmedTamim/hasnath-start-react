@@ -19,21 +19,9 @@ function User() {
 
             <p className="mt-4 text-gray-600">
               <ul>
-                <li>
-                  Nobis minus voluptatibus pariatur dignissimos libero quaerat
-                  iure expedita at? Asperiores nemo possimus nesciunt dicta
-                  veniam aspernatur quam mollitia.
-                </li>
-                <li>
-                  Nobis minus voluptatibus pariatur dignissimos libero quaerat
-                  iure expedita at? Asperiores nemo possimus nesciunt dicta
-                  veniam aspernatur quam mollitia.
-                </li>
-                <li>
-                  Nobis minus voluptatibus pariatur dignissimos libero quaerat
-                  iure expedita at? Asperiores nemo possimus nesciunt dicta
-                  veniam aspernatur quam mollitia.
-                </li>
+                <li>when you click login only show hasnath </li>
+                <li> you can put whatever / name given will show here it not comes from login</li>
+                <li>whatever / name given will show here</li>
               </ul>
             </p>
           </div>

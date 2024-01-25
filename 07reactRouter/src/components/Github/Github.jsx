@@ -14,9 +14,9 @@ function Github() {
   //   }, []);
 
   return (
-    <div className="text-center bg-violet-500 p-4 text-4xl w-full max-h-screen">
-      <div className="text-white font-bold flex justify-around ">
-        <div className="rounder-full">
+    <div className="text-center bg-violet-500 p-4 text-4xl w-full min-h-[700px] ">
+      <div className="text-white font-bold flex justify-around bg-fuchsia-300  m-24">
+        <div className="rounder-full py-8 ">
           <img width={300} src={data.avatar_url} alt="git pic" />
         </div>
         <div className=" text-start flex flex-col justify-center">

@@ -14,11 +14,11 @@ function UserTamim() {
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-              {tamimid}
+              My name is {tamimid}
             </h2>
 
             <p className="mt-4 text-gray-600">
-              <ul></ul>
+             Thank you for explore
             </p>
           </div>
         </div>
