@@ -11,6 +11,7 @@ function InputBox({
   currencyDisable = false,
   className = "",
 }) {
+  // Generating unique IDs for accessibility attributes
   const amountInputId = useId();
 
   return (
