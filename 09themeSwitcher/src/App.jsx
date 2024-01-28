@@ -6,7 +6,7 @@ import Card from "./components/Card/Card";
 
 function App() {
   const [themeMode, setThemeMode] = useState("light");
-
+  // const [todos, setTodos] = useState([]);
   const lightTheme = () => {
     setThemeMode("light");
   };
@@ -29,7 +29,7 @@ function App() {
             <ThemeBtn></ThemeBtn>
           </div>
 
-          <div className="w-full max-w-sm mx-auto">
+          <div className="w-full max-w-sm mx-auto ">
             <Card></Card>
           </div>
         </div>
